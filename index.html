@@ -3,25 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Seite</title>
+    <title>FPÖ St. Margarethen - News</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
+            background: linear-gradient(to bottom, #0056A3, #ffffff, #EF3340);
+            color: #000;
+        }
+        h1 {
+            color: #0056A3;
+        }
+        p {
+            font-size: 18px;
+            font-weight: bold;
         }
         a {
-            display: block;
+            display: inline-block;
             margin-top: 20px;
             font-size: 20px;
-            color: blue;
+            color: #0056A3;
             text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #0056A3;
+            border-radius: 5px;
+            background-color: white;
+            transition: 0.3s;
+        }
+        a:hover {
+            background-color: #0056A3;
+            color: white;
+        }
+        .video-container {
+            margin-top: 30px;
+        }
+        video {
+            width: 80%;
+            max-width: 800px;
+            border: 3px solid #0056A3;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Herzlich Willkommen auf unserer Seite!</h1>
-    <p>Hier könnten die News stehen</p>
-    <a href="https://www.stubenberger.eu/" target="_blank">Hier geht's zur Website</a>
+    <h1>Herzlich Willkommen auf der Newsseite der FPÖ St. Margarethen!</h1>
+    <p>Hier halten wir euch über aktuelle Themen rund um unsere Region auf dem Laufenden.</p>
+    
+    <a href="https://www.fpoe-stmk.at/partei/murtal" target="_blank">Zur offiziellen FPÖ-Website</a>
+    
+    <div class="video-container">
+        <h2>Unser Vorstellungsvideo</h2>
+        <video controls>
+            <source src="vorstellung.mp4" type="video/mp4">
+            Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+    </div>
 </body>
 </html>
